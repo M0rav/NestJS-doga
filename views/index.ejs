@@ -24,15 +24,17 @@
                 <th>Súly</th>
             </tr>
             <tr>
+                <% for (let m = 0; m < macskak.length; m++){ %>
                 <div>
                     <td>
-                        <!--szem szin -->
+                        <%= macskak.szem_szin %>
                     </td>
                     <td>
-                        <!--suly-->
+                        <%= macskak.suly %>
                     </td>
                 </div>
             </tr>
+            <% } %>
         </table>
         <button><a href="/cats/new">Új Cica felvétele</a></button>
     </form>
