@@ -24,6 +24,12 @@ async index(@Query('szem_szin') szem_szin: string) {
       const [rows] = await db.execute('SELECT id, szem_szin, suly FROM macskak ORDER BY suly DESC');
       return{macskak:rows};
     }
-
+    
   }
+  @Get('cats/new')
+  @Render('addcat')
+  ujcica(){
+    return {};
+  }
+  
 }
